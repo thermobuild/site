@@ -34,8 +34,8 @@ nav.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.3)}
 .nav-logo{font-family:'Montserrat',sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:.02em;display:flex;align-items:center;gap:10px}
 .nav-logo .mark{width:38px;height:38px;background:var(--orange);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
 .nav-logo span em{font-style:normal;color:var(--orange)}
-.nav-links{display:flex;align-items:center;gap:4px;list-style:none}
-.nav-links a{color:rgba(255,255,255,.9);font-family:'Montserrat',sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase;padding:8px 12px;border-radius:4px;transition:color .2s,background .2s;white-space:nowrap}
+.nav-links{display:flex;align-items:center;gap:2px;list-style:none;flex-shrink:0}
+.nav-links a{color:rgba(255,255,255,.9);font-family:'Montserrat',sans-serif;font-weight:600;font-size:.78rem;letter-spacing:.03em;text-transform:uppercase;padding:8px 9px;border-radius:4px;transition:color .2s,background .2s;white-space:nowrap}
 .nav-links a:hover,.nav-links a.active{color:var(--orange)}
 .nav-cta{background:var(--orange);color:var(--white)!important;padding:10px 18px!important;border-radius:4px!important;transition:background .2s!important}
 .nav-cta:hover{background:var(--orange-dark)!important;color:var(--white)!important}
@@ -352,9 +352,11 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.75);padding:60px 20px
   .perks-grid{grid-template-columns:repeat(2,1fr)}
   .timeline{grid-template-columns:repeat(2,1fr)}
 }
-@media(max-width:768px){
+@media(max-width:1180px){
   .nav-links{display:none}
   .nav-hamburger{display:flex}
+}
+@media(max-width:768px){
   .two-col-grid,.contact-grid,.service-block,.about-values,.testimonials-grid,.related-services{grid-template-columns:1fr}
   .services-grid{grid-template-columns:1fr 1fr}
   .why-grid{grid-template-columns:repeat(2,1fr)}

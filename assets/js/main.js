@@ -50,7 +50,9 @@
     if(empty) empty.style.display = visibleCount === 0 ? 'block' : 'none';
   };
 
-  // Quote request form
+  // Quote request form — file name preview only.
+  // Actual submission now goes to FormSubmit (see contact.html), which emails
+  // the enquiry to info@thermobuild.ie and redirects to thank-you.html.
   var quoteForm = document.getElementById('quoteForm');
   if(quoteForm){
     var fileInput = document.getElementById('project-files');
@@ -65,17 +67,6 @@
         }
       });
     }
-    quoteForm.addEventListener('submit', function(e){
-      e.preventDefault();
-      if(!quoteForm.checkValidity()){
-        quoteForm.reportValidity();
-        return;
-      }
-      quoteForm.style.display = 'none';
-      var success = document.getElementById('formSuccess');
-      if(success) success.style.display = 'block';
-      // In production this should POST to a backend endpoint or form service.
-    });
   }
 
   // Cookie consent banner

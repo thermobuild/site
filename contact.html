@@ -244,7 +244,12 @@
           <h2 class="section-title" style="font-size:1.5rem;margin-bottom:8px">Request a Free Quote</h2>
           <p style="font-size:.88rem;color:var(--grey-text);margin-bottom:24px">Fields marked <span class="req">*</span> are required. The more detail you can provide, the more accurate your quote will be.</p>
 
-          <form id="quoteForm" novalidate>
+          <form id="quoteForm" action="https://formsubmit.co/info@thermobuild.ie" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="_subject" value="New Quote Request — ThermoBuild Systems Website">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://www.thermobuild.ie/thank-you.html">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
             <div class="form-section-label">Your Details</div>
             <div class="form-row">
               <div class="form-group"><label>Full Name <span class="req">*</span></label><input type="text" name="full_name" placeholder="John Murphy" required></div>
@@ -317,13 +322,6 @@
             <button type="submit" class="btn-primary" style="width:100%;font-size:1rem;padding:18px;margin-top:24px">Send Enquiry →</button>
             <p style="font-size:.78rem;color:var(--grey-text);margin-top:12px;text-align:center">We typically respond within 24 hours on working days.</p>
           </form>
-
-          <div class="form-success" id="formSuccess">
-            <div class="ico">✅</div>
-            <h3>Thank You!</h3>
-            <p style="color:var(--grey-text)">Your enquiry has been received. A member of the ThermoBuild Systems team will be in touch within 24 hours on working days.</p>
-            <p style="color:var(--grey-text);margin-top:12px">Need to speak to us sooner? Call <a href="tel:+353834485000" style="color:var(--orange);font-weight:700">083 448 5000</a>.</p>
-          </div>
         </div>
       </div>
 
